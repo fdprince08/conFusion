@@ -9,20 +9,12 @@
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link href="css/styles.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="node_modules/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap-social/bootstrap-social.css"
-    />
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- endbuild -->
     <title>Ristorante Con Fusion</title>
   </head>
   <!----exercise navbar first inital with bootstap-->
@@ -138,10 +130,10 @@
                                    Section</div>
                             <div class="form-group col-sm-3">
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-radio-1 active" style= "color: white; background-color: green">
+                                <label class="btn btn-radio-No-Smoking active" style= "color: white; background-color: green">
                                       <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
                                     </label>
-                                    <label class="btn btn-radio-2" style= "color: white; background-color: red">
+                                    <label class="btn btn-radio-Smoking" style= "color: white; background-color: red">
                                       <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
                                     </label>
                                     
@@ -404,39 +396,13 @@
       </div>
     </footer>
 
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#mycarousel").carousel( { interval: 2000 } );
-            $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-            });
-        });
-    </script>
-    <script>
-    $(document).ready(function(){
-            $("#loginButton").click(function(){
-              $("#loginModal").modal();
-            });
-        });
-    </script>
-      <script>
-          $(document).ready(function(){
-                  $("#reserveButton").click(function(){
-                    $("#reserveModal").modal();
-                  });
-              });
-          </script>
+     <!-- build:js js/main.js -->
+     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script src="js/scripts.js"></script>
+     <!-- endbuild -->
+    <script></script>
+  
   </body>
 </html>

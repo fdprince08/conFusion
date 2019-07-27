@@ -74,15 +74,24 @@ body {
   bottom: 0px;
   z-index: 1;
 }
-.login {
+.modal-header {
+  color: white;
   background-color: #512da8;
+  border-bottom: #512da8;
+  border: #512da8;
 }
-.btn-radio-1 {
+
+.modal-body {
+  color: white;
+  background-color: #9575cd;
+}
+
+.btn-radio-No-Smoking {
   background-color: green !important;
   color: white;
 }
 
-.btn-radio-2 {
+.btn-radio-Smoking {
   background-color: red !important;
   color: white;
 }
