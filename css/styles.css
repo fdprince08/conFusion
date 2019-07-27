@@ -93,3 +93,10 @@ input[type="radio"] {
 .time {
   width: 5cm;
 }
+
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+}
