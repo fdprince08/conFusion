@@ -64,8 +64,8 @@
             </li>
           </ul>
           <span class="navbar-text">
-              <a data-toggle="modal" data-target="#loginModal">
-              <span class="fa fa-sign-in"></span> Login</a>
+              <a>
+              <span class="fa fa-sign-in" id="loginButton"></span> Login</a>
           </span>
         </div>
       </div>
@@ -74,11 +74,11 @@
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header"  style= "color: white; background-color: #512da8; border-bottom:#512da8; border:#512da8 ">
                     <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" style="color: whitesmoke" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style= "color: white; background-color: #9575cd">
                     <form>
                         <div class="form-row">
                             <div class="form-group col-sm-4">
@@ -106,15 +106,15 @@
             </div>
         </div>
     </div>
-    <div id="reserveTableModal" class="modal fade" role="dialog">
+    <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg " role="content">
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header" style= "color: white; background-color: #512da8; border-bottom:#512da8; border:#512da8">
                     <h4 class="modal-title">Reserve a Table </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" style="color: whitesmoke" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style= "color: white; background-color: #9575cd;">
                     <form>
                         <div class="form-row">
                             <div class="form-group col-sm-3">
@@ -138,10 +138,10 @@
                                    Section</div>
                             <div class="form-group col-sm-3">
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-radio-1 active">
+                                <label class="btn btn-radio-1 active" style= "color: white; background-color: green">
                                       <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
                                     </label>
-                                    <label class="btn btn-radio-2">
+                                    <label class="btn btn-radio-2" style= "color: white; background-color: red">
                                       <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
                                     </label>
                                     
@@ -189,8 +189,7 @@
             </div>
               <div class="col-12 col-sm-3 col-md-3">
                   <a role="button" class="btn btn-block btn-reserve nav-link btn-warning" 
-                  data-toggle="modal" data-target="#reserveTableModal"
-                  href="#reserveTableModal">Reserve Table</a>       
+                  id="reserveButton">Reserve Table</a>       
                    </div>
             </div>
           </div>
@@ -425,5 +424,19 @@
             });
         });
     </script>
+    <script>
+    $(document).ready(function(){
+            $("#loginButton").click(function(){
+              $("#loginModal").modal();
+            });
+        });
+    </script>
+      <script>
+          $(document).ready(function(){
+                  $("#reserveButton").click(function(){
+                    $("#reserveModal").modal();
+                  });
+              });
+          </script>
   </body>
 </html>

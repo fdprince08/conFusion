@@ -100,3 +100,6 @@ input[type="radio"] {
   bottom: 0px;
   z-index: 1;
 }
+.login {
+  background-color: #512da8;
+}
