@@ -41,9 +41,6 @@ body {
 .root {
   width: 60% !important;
   min-height: 300px;
-  margin-top: 10px;
-  margin: 40px;
-  margin-left: 200px;
 }
 
 .card-head {
@@ -74,4 +71,25 @@ body {
   top: 0;
   left: 0;
   min-height: 300px;
+}
+
+.btn-radio-1 {
+  background-color: green !important;
+  color: white;
+}
+
+.btn-radio-2 {
+  background-color: red !important;
+  color: white;
+}
+
+input[type="radio"] {
+  margin: 0 10px 0 10px;
+}
+
+.date {
+  width: 4.5cm;
+}
+.time {
+  width: 5cm;
 }
