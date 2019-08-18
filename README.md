@@ -5,6 +5,7 @@ Project created using bootstrap version 4.0.0, bootstrap social version 5.1.1, a
 2. Development, Building and Deployment.
 3. Bootstrap come to rescue in the responsive design.
 4. Start with npm run lite.
+5. Carousel rendered in the screen.
 
 # for run this react app into localhost: 3000
  * Install than install node check: https://nodejs.org/en/download/
